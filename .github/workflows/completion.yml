@@ -9,4 +9,4 @@ jobs:
 
     steps:
     - name: all entries made
-      run: bash check-complete.sh
+      run: bash ./check-complete.sh
