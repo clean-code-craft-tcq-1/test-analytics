@@ -4,29 +4,29 @@ Design tests for Analytics functionality on a Battery Monitoring System.
 
 Fill the parts marked '_enter' in the **Tasks** section below.
 
-## Analysis-features to be tested
+## Analysis-functionality to be tested
 
-This section lists the Analysis, for which _tests_ must be written.
+This section lists the Analysis for which _tests_ must be written.
 
 Battery Telemetrics are collected and stored on a server.
 Data for a month is stored in a [csv file](https://en.wikipedia.org/wiki/Comma-separated_values).
 
 Analysis must be done on this csv file to find the following:
-- minimum reading
-- maximum reading
+- minimum
+- maximum
 - count of breaches (how many times did it cross the threshold in a month?)
 - record trends (date & time when the reading was continuously increasing for 30 minutes)
 
-A PDF report of the analysis must be stored.
+A PDF report of the analysis must be stored every week.
 Notification must be sent when a new report is available.
 
 ## Tasks
 
 ### List Dependencies
 
-List the dependencies of the Analysis functionality.
+List the dependencies of the Analysis-functionality.
 
-1. Access to the Server containing the csv (telemetrics)
+1. Access to the Server containing the telemetrics in a csv file
 1. _enter dependency
 1. _enter dependency
 
@@ -38,7 +38,7 @@ What is included in the software unit-test? What is not? Fill this table.
 
 | Item                      | Included?     | Reasoning / Assumption
 |---------------------------|---------------|---
-Battery Data                | No            | We do not test the accuracy of data
+Battery Data-accuracy       | No            | We do not test the accuracy of data
 Computation of maximum      | Yes           | This is part of the software being developed
 Off-the-shelf PDF converter | _enter Yes/No | _enter reasoning
 Counting the breaches       | _enter Yes/No | _enter reasoning
@@ -46,6 +46,8 @@ Detecting trends            | _enter Yes/No | _enter reasoning
 Notification utility        | _enter Yes/No | _enter reasoning
 
 ### List the Test Cases
+
+Write tests in the form of `<expected output or action>` from `<input>` / when `<event>`
 
 Add to these tests:
 
