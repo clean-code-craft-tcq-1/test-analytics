@@ -9,4 +9,6 @@ jobs:
 
     steps:
     - name: all entries made
-      run: bash ./check-complete.sh
+      run: |
+        ls -al
+        grep -v _entry README.md
